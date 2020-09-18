@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+<div class="header">
+    <h2>My To Do List</h2>
+    <form action="">
+        <input type="text" id="myInput" placeholder="Task title..." />
+        <button type="submit" class="addBtn">Add a task</button>
+    </form>
+</div>
+
+<ul>
+    <li>
+        <a href="done"> <span class="task-list-item">Do some shopping </span> </a
+        ><a onclick="return confirm('Are you sure to delete?')" href="delete"><span class="close">X</span></a>
+    </li>
+    <li class="checked">
+        <a href="undone"> <span class="task-list-item">Buy stuff </span> </a
+        ><a onclick="return confirm('Are you sure to delete?')" href="delete"><span class="close">X</span></a>
+    </li>
+    <li>
+        <a href="done"> <span class="task-list-item">Meet someone </span> </a
+        ><a onclick="return confirm('Are you sure to delete?')" href="delete"><span class="close">X</span></a>
+    </li>
+    <li>
+        <a href="done"> <span class="task-list-item">Read a book </span> </a
+        ><a onclick="return confirm('Are you sure to delete?')" href="delete"><span class="close">X</span></a>
+    </li>
+    <li>
+        <a href="done"> <span class="task-list-item">Learn Doctrine ORM </span> </a
+        ><a onclick="return confirm('Are you sure to delete?')" href="delete"><span class="close">X</span></a>
+    </li>
+    <li>
+        <a href="done"> <span class="task-list-item">Prepare food </span> </a
+        ><a onclick="return confirm('Are you sure to delete?')" href="delete"><span class="close">X</span></a>
+    </li>
+</ul>
+
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ 'C:/Users/Nilla/to-do-app/src/Controller/ToDoListController.php'|file_link(0) }}">src/Controller/ToDoListController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/Users/Nilla/to-do-app/templates/to_do_list/index.html.twig'|file_link(0) }}">templates/to_do_list/index.html.twig</a></code></li>
+    </ul>
+</div>
+{% endblock %}
