@@ -36,11 +36,9 @@ class ToDoListController extends AbstractController
 
     /**
      * @Route("/delete/{id}", name="delete_task")
-
      */
     public function deleteTask($id)
     {
         exit('to do: delete task with the id of: '. $id );
     }
-
 }
