@@ -13,7 +13,6 @@
 <ul>
     {% for task in tasks %}
     <li {% if task.status %} class="checked" {% endif %} >
-        {{ task.id }}
         <a href="{{ path('switch_status', {'id': task.id })}}"> <span class="task-list-item">{{ task.title }} </span> </a
         ><a onclick="return confirm('Are you sure to delete?')" href="{{ path('delete_task', {'id':task.id })}}"><span class="close">X</span></a>
     </li>
