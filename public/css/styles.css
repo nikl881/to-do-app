@@ -3,6 +3,12 @@ body {
   min-width: 250px;
 }
 
+.card{
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
 /* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
