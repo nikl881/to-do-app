@@ -1,6 +1,8 @@
 body {
   margin: 0;
   min-width: 250px;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
 }
 
 .card{
@@ -31,7 +33,7 @@ ul li {
   position: relative;
   padding: 12px 8px 12px 40px;
   list-style-type: none;
-  background: #fcf2cb;
+  background: #FFFFFF;
   font-size: 18px;
   transition: 0.2s;
 
@@ -44,18 +46,18 @@ ul li {
 
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
-  background: #fcf2cb;
+  background: #ffffff;
 }
 
 /* Darker background-color on hover */
 ul li:hover {
-  background: #ff8926;
+  background: #c4c4c4;
 }
 
 /* When clicked on, add a background color and strike out text */
 ul li.checked {
-  background: #ff8926;
-  color: #fff;
+  background: #c4c4c4;
+  color: #0e0b73;
   text-decoration: line-through;
 }
 
@@ -63,7 +65,7 @@ ul li.checked {
 ul li.checked::before {
   content: "";
   position: absolute;
-  border-color: #ffb00d;
+  border-color: #048f57;
   border-style: solid;
   border-width: 0 2px 2px 0;
   top: 10px;
@@ -82,7 +84,7 @@ ul li.checked::before {
 }
 
 .close:hover {
-  background-color: #bc2d19;
+  background-color: #f30202;
   color: white;
 }
 
@@ -132,6 +134,9 @@ input {
 }
 
 .task-list-item {
-    display: block;
+  display: block;
 }
 
+.btn-tasks{
+  background-color: #B0413E!important;
+}
