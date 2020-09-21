@@ -5,6 +5,12 @@ body {
   background-repeat: no-repeat;
 }
 
+a{
+  color: #222222;
+  font-weight: bold;
+
+}
+
 .card{
   margin: 0 auto; /* Added */
   float: none; /* Added */
@@ -84,16 +90,19 @@ ul li.checked::before {
 }
 
 .close:hover {
-  background-color: #f30202;
+  background-color: #fc0909;
   color: white;
+  border-radius: 10px;
 }
 
 /* Style the header */
 .header {
-  background-color: #1e4363;
+  background-color: #816e82;
   padding: 30px 40px;
   color: white;
   text-align: center;
+  border-radius: 25px;
+
 }
 
 /* Clear floats after the header */
@@ -139,4 +148,9 @@ input {
 
 .btn-tasks{
   background-color: #B0413E!important;
+}
+
+.custom-date{
+  font-family: Candara, serif;
+
 }
